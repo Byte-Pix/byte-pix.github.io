@@ -22,6 +22,10 @@ img.logo {
     margin: auto;
     width: 400px;
 }
+img.small {
+    width: 200px;
+    padding: left;
+}
 /*
 nav bar
 */
