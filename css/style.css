@@ -1,3 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+This .wrap div style is to fix the issue of the sections outside of the (yellow) box.
+*/
+/* .wrap {
+    overflow: hidden;
+} */
+
 body {
     background-color: rgb(255, 213, 122);
     border: 2px solid Gray;
@@ -10,6 +24,7 @@ body {
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
+    display: flow-root;
 }
 
 html {
@@ -17,6 +32,19 @@ html {
     background-size: 30px 30px;
 }
 
+
+header p{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+header h1{
+    font-size: 16px;
+    text-align: right;
+}
+
+/* image */
 img.logo {
     display: block;
     margin: auto;
@@ -26,13 +54,19 @@ img.small {
     width: 200px;
     padding: left;
 }
-/*
-nav bar
-*/
+img.medium {
+    max-width: 360px;
+    width: 50%;
+}
+img.large {
+    width: 100%;
+}
+
+/*nav bar */
 nav ul {
     list-style-type: none;
-    background-color: thistle;
-    border: 4px solid #111111;
+    background-color: #b577b5;
+    border: 4px solid black;
     border-radius: 10px;
     font-family: sans-serif;
     font-weight: bold;
@@ -61,4 +95,38 @@ nav li a:active {
     text-decoration: underline;
     background-color: black;
     color: white;
+}
+
+section{
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+footer p.copywrite{
+    float: left;
+    margin-top: 0px;
+}
+footer p.contact{
+    text-align: right;
+}
+
+
+
+
+@media all and (min-width: 900px){
+article {
+    float: left;
+    width: 66%
+}
+aside {
+    float: right;
+    padding-left: 24px;
+    width: 34%
+}
+footer{
+    clear: both;
+}
 }
