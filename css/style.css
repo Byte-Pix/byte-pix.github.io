@@ -5,12 +5,6 @@ html {
     box-sizing: inherit;
 }
 
-/*
-This .wrap div style is to fix the issue of the sections outside of the (yellow) box.
-*/
-/* .wrap {
-    overflow: hidden;
-} */
 
 body {
     background-color: rgb(255, 213, 122);
