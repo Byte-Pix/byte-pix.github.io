@@ -8,9 +8,9 @@ html {
 /*
 This .wrap div style is to fix the issue of the sections outside of the (yellow) box.
 */
-.wrap {
+/* .wrap {
     overflow: hidden;
-}
+} */
 
 body {
     background-color: rgb(255, 213, 122);
@@ -24,7 +24,7 @@ body {
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
-/*     display: flow-root; */
+    display: flow-root;
 }
 
 html {
