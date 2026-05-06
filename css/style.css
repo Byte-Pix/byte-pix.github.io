@@ -94,6 +94,8 @@ nav li a:active {
 
 section{
     background-color: #ffffff;
+    border: 2px solid gray;
+    border-radius: 10px;
     margin-bottom: 24px;
     min-height: 320px;
     padding-left: 24px;
@@ -112,16 +114,16 @@ footer p.contact{
 
 
 @media all and (min-width: 900px){
-article {
+#article {
     float: left;
-    width: 66%
+    width: 66%;
 }
-aside {
-    float: right;
+#side {
+    float: left;
+    width: 34%;
     padding-left: 24px;
-    width: 34%
 }
-footer{
+#footer {
     clear: both;
 }
 }
